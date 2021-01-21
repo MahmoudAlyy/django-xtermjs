@@ -1,7 +1,3 @@
-# set async_mode to 'threading', 'eventlet', 'gevent' or 'gevent_uwsgi' to
-# force a mode else, the best mode is selected automatically from what's
-# installed
-
 import os
 from django.shortcuts import render
 import socketio
@@ -17,7 +13,6 @@ import eventlet
 
 async_mode = "eventlet"
 sio = socketio.Server(async_mode=async_mode)
-#sio = socketio.Server()
 
 # will be used as global variables
 fd = None

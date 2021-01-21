@@ -11,12 +11,10 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 import socketio
-
 import eventlet
 import eventlet.wsgi
-
 from xterm.views import sio
-#from socketio import Middleware
+
 django_app = get_wsgi_application()
 application = socketio.Middleware(sio, django_app)
 
