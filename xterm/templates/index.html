@@ -23,7 +23,7 @@
 
         Terminal.applyAddon(fit)
 
-        var socket = io.connect();
+        var socket = io.connect({transports: ["websocket", "polling"]});
 
         const status = document.getElementById("status")
         const button = document.getElementById("button")
