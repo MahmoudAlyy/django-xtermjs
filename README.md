@@ -12,6 +12,6 @@ Clone the repository and cd into it, then run:
 ```
 python -m venv venv
 venv/bin/pip install -r requirements.txt
-venv/bin/python manange.py runserver
+venv/bin/python manage.py runserver
 ```
 
